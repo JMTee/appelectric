@@ -1,0 +1,50 @@
+@import "variables";
+
+#products{
+    margin-top:40px;
+    .row{
+        margin-top:15px; 
+    }
+    .card{
+        -webkit-box-shadow: 6px 12px 41px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 6px 12px 41px -10px rgba(0,0,0,0.75);
+        box-shadow: 6px 12px 41px -10px rgba(0,0,0,0.75);
+        margin-right: 60px;
+        margin-bottom: 50px;
+        padding-bottom: 6px;
+        h3{
+            font-size: 22px;
+            font-weight: bold;
+        }
+    }
+    .btn-app-elec{
+        display:block;
+        margin: 0 auto; 
+    }
+}
+#brands{
+    margin-top:40px; 
+    background-color: $gray-bg;
+    padding-top: 42px;
+    .row{
+        margin-top:15px; 
+    }
+    .card{
+        padding: 0px 35px; 
+        background:none;
+    }
+}
+#products, #brands{
+    .card{
+        border:none;
+    }
+}
+
+@media only screen 
+  and (max-width: 768px) {
+    #products{
+        .card{
+          margin:15px;
+        }
+    }
+  }

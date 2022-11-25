@@ -1,0 +1,62 @@
+@import "variables";
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+.btn-app-elec{
+    color:white;
+    background-color:$secondary-color;
+    border-radius: 0px;
+    padding: 9px 40px;
+    font-weight: bold;
+    &:hover{
+        color:white;
+    }
+}
+
+#location{
+    .contact-details{
+        padding-top:45px; 
+        padding-bottom:90px;
+        padding-left:10%;
+    }
+}
+
+.font-blue{
+    color:$primary-color;
+}
+.font-red{
+    color:$secondary-color;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+
+
+@media only screen 
+  and (max-width: 768px) {
+    #location{
+        display:block !important;
+    }
+  }
+
+  /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+and (max-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2) { 
+         
+  #location{
+      display:block !important;
+      .contact-details{
+          padding-left: 15px;
+          padding-right:15px;
+          padding-bottom:0px;
+      h3{
+          font-size:1.5rem;
+      } 
+      }
+  }
+}

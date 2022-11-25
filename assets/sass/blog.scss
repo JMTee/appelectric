@@ -1,0 +1,41 @@
+#blog{
+    margin-bottom:50px;
+    .card{
+        padding:0px;
+        margin:10px 15px; 
+    }
+    h1{
+        font-weight:bold;
+        margin-top:15px;
+        margin-bottom:30px;
+    }
+    
+}
+
+#blog-content{
+    .breadcumbs{
+        color:gray;
+    }
+    img{
+        display:block;
+    }
+    h2{
+        font-weight:bold;
+        margin-top:15px;
+    }
+  
+}
+
+@media only screen 
+  and (max-width: 768px) {
+    #blog-content{
+      
+        img{
+           width:100%;
+        }
+          
+    iframe{
+        width:100% !important;
+    }
+    }
+  }

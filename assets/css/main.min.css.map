@@ -1,0 +1,15 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,IAAI,AAAA,CACA,WAAW,CAAE,kBAAkB,CAClC,ACFD,AAEQ,SAFC,CACL,cAAc,CACV,EAAE,AAAA,CACE,WAAW,CAAE,GAAG,CAAC,GAAG,CAAC,IAAI,CAAC,IAAgB,CAC7C,ACJT,AAAA,SAAS,AAAA,CACL,OAAO,CAAC,IAAI,CAQb,AATH,AAEE,SAFO,CAEP,IAAI,AAAA,CACA,OAAO,CAAC,GAAG,CAKV,AARP,AAIM,SAJG,CAEP,IAAI,CAEA,MAAM,AAAA,CACJ,KAAK,CAAC,IAAI,CACV,MAAM,CAAC,IAAI,CACV,ACLT,AAAA,OAAO,AAAA,CACH,gBAAgB,CJHL,OAAO,CIIlB,KAAK,CAAC,KAAK,CACd",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/variables.scss",
+        "../sass/global.scss",
+        "../sass/home.scss",
+        "../sass/location.scss",
+        "../sass/footer.scss",
+        "../sass/variables.scss"
+    ],
+    "names": [],
+    "file": "main.min.css"
+}

@@ -1,0 +1,28 @@
+---
+layout: inner-page
+title: "App Electric Corp - Custom panelboard fabricator and manufacturer | ATS,circuit breaker,switch gears and electrical supplier in Metro Manila, Philippines"
+imageUrl: "../assets/images/blog-banner.jpg"
+description: "Leading manufacturer and supplier of engineered Electrical Products and Services in the Philippines."
+bannerUrl: "../assets/images/blog-banner.jpg"
+---
+<div class="container" id="blog">
+    <h1>Blog</h1>
+  <div class="row">
+  
+   {% for post in site.categories["blog"] %}
+
+   <div class="card col-md-4 col-sm-2 col-12">
+      <img class="card-img-top" src="{{post.imageUrl}}" alt="{{post.title}} image">
+      <div class="card-body">
+        <h5 class="card-title">{{ post.title }}</h5>
+        <i>{{post.date | date: "%b %d, %Y" }}</i>
+        <br>
+        <p class="card-text">{{post.content | truncate: 80}}</p>
+        <a href="{{post.url}}" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+ 
+                {% endfor %}
+              </div>
+                
+</div>

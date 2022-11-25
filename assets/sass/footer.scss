@@ -1,0 +1,41 @@
+@import "variables";
+
+#footer{
+    background-color: $primary-color;
+    color:white;
+    padding-top:15px;
+    p{
+        margin-bottom:0px; 
+    
+
+    }
+
+    .links{
+        margin-bottom:15px;
+        a{
+           color:white;
+           &:hover{
+               color:white;
+               text-decoration:none;
+           } 
+        }
+    }
+    .social{
+        a{
+            margin-right:15px;
+            font-size:30px;
+        }
+        .ion-logo-instagram{
+                color:#bc2a8d;
+        }
+        .ion-logo-twitter{
+            color:#38A1F3;
+        }
+        .ion-logo-facebook{
+            color:#3B5998;
+        }
+        .ion-logo-linkedin{
+            color:#0077B5;
+        }
+    }
+}

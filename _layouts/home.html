@@ -1,0 +1,89 @@
+---
+layout: main
+---
+<div id="app-carousel-controls" class="carousel slide" data-ride="carousel">
+
+
+  <div class="carousel-inner">
+  
+    {% for items in page.carousel %}
+    {% if forloop.first == true %}
+    <div class="carousel-item active">
+      {% else %}
+      <div class="carousel-item">
+        {% endif %}
+        <div class="carousel-filter"></div>
+        <img class="d-block w-100" src="{{site.baseurl}}/{{items.carousel-items.url}}.jpg" alt="{{items.carousel-items.altText}}">
+        <div class="carousel-caption d-md-block">
+          <h1>{{items.carousel-items.caption}}</h1>
+
+          {% if items.carousel-items.btnLabel %}
+          <a class="btn btn-app-elec" href="{{items.carousel-items.btnUrl}}">{{items.carousel-items.btnLabel}}</a>
+          {% endif %}
+
+        </div>
+      </div>
+
+      {% endfor %}
+
+      <ol class="carousel-indicators">
+        {% for items in page.carousel %}
+        {% if forloop.first == true %}
+        <li data-target="#app-carousel-controls" data-slide-to="{{forloop.index | minus:1}}" class="active"></li>
+        {% else %}
+        <li data-target="#app-carousel-controls" data-slide-to="{{forloop.index | minus:1}}"></li>
+        {% endif %}
+        {% endfor %}
+      </ol>
+    </div>
+
+   
+
+    <article class="container" id="about">
+    
+      <div class="row">
+        <div class="col font-blue">
+          <h1 class="font-blue">Our Story</h1>
+          {{page.txt-about}}
+        </div>
+        <div class="col-md-6">
+            <video muted loop id="about-us-video">
+                <source src="assets/videos/appelectric-bg-video.mp4" type="video/mp4">
+                  <source src="assets/videos/appelectric-bg-video.flv" type="video/flv">
+                Your browser does not support the video tag.
+              </video>
+          
+          <br>
+          <br>
+          <img src="{{page.img-about1-url}}" class="img-fluid" alt="company logos" />
+         
+        </div>
+      </div>
+    </article>
+    
+    <div id="companies">
+      <div class="container" >
+        <h2 class="font-red">Manufacturing panelboards for these companies in the Philippines </h2>
+        <div class="row"> 
+          {% for items in page.companies %}
+          <div class="card col-6 col-md-3">
+            <img class="card-img-top" src="{{items.company-item.imageUrl}}" alt="{{items.company-item.name}} Logo">
+            
+          </div>
+          {% endfor %}
+
+        </div>
+        <a class="btn btn-app-elec" href="assets/files/APPEC-Projects.pdf" target="_new"> More projects... </a>
+       <br>
+       <br>
+        <h3 class="font-blue text-center "><strong>What they say about us.</strong></h3>
+        <h4 class="font-blue text-center ">
+          <i>Good quality electrical products, getting you the electrical equipment you must have, when you need it. And, they have excellent customer service. Trusted and tested.</i>
+          - <strong>Rachelle Go</strong>
+        </h4>
+      </div>
+    </div>
+
+
+
+    {{ content }}

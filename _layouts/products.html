@@ -1,0 +1,32 @@
+---
+layout: inner-page
+bannerUrl: "../assets/images/product-banner.jpg"
+---
+<div id="products">
+<div class="container">
+    <h2 class="font-blue text-bold">Our Products</h2>
+    <div class="row">
+        {% for items in page.products %}
+        <div class="card col-5 col-md-3">
+            <img class="card-img-top" src="{{items.product-item.imageUrl}}" alt="{{items.product-item.name}}">
+            <h3 class="font-blue">{{items.product-item.name}}</h3>
+        </div>
+        {% endfor %}
+        <a class="btn btn-app-elec" href="../assets/files/APPEC-Products.pdf" target="_new"> More products... </a>
+    </div>
+</div>
+</div>
+<div id="brands">
+    <div class="container">
+        <h2 class="font-blue text-bold text-center">We carry the best brands for premium quality.</h2>
+        <div class="row">
+            {% for items in page.brands %}
+            <div class="card col-6 col-md-3">
+                <img class="card-img-top" src="{{items.brand-item.imageUrl}}" alt="{{items.brand-item.name}} Logo">
+
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</div>
